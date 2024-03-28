@@ -1,0 +1,24 @@
+C:\Users\FeZoX\Desktop\ToolShopDomain\bin\Debug\net8.0\ToolShopDomainCore.deps.json
+C:\Users\FeZoX\Desktop\ToolShopDomain\bin\Debug\net8.0\ToolShopDomainCore.dll
+C:\Users\FeZoX\Desktop\ToolShopDomain\bin\Debug\net8.0\ToolShopDomainCore.pdb
+C:\Users\FeZoX\Desktop\ToolShopDomain\obj\Debug\net8.0\ToolShopDomainCore.csproj.AssemblyReference.cache
+C:\Users\FeZoX\Desktop\ToolShopDomain\obj\Debug\net8.0\ToolShopDomainCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\FeZoX\Desktop\ToolShopDomain\obj\Debug\net8.0\ToolShopDomainCore.AssemblyInfoInputs.cache
+C:\Users\FeZoX\Desktop\ToolShopDomain\obj\Debug\net8.0\ToolShopDomainCore.AssemblyInfo.cs
+C:\Users\FeZoX\Desktop\ToolShopDomain\obj\Debug\net8.0\ToolShopDomainCore.csproj.CoreCompileInputs.cache
+C:\Users\FeZoX\Desktop\ToolShopDomain\obj\Debug\net8.0\ToolShopDomainCore.dll
+C:\Users\FeZoX\Desktop\ToolShopDomain\obj\Debug\net8.0\refint\ToolShopDomainCore.dll
+C:\Users\FeZoX\Desktop\ToolShopDomain\obj\Debug\net8.0\ToolShopDomainCore.pdb
+C:\Users\FeZoX\Desktop\ToolShopDomain\obj\Debug\net8.0\ref\ToolShopDomainCore.dll
+C:\Users\FeZoX\Desktop\Tool Shop WebSite\ToolShopDomain\bin\Debug\net8.0\ToolShopDomainCore.deps.json
+C:\Users\FeZoX\Desktop\Tool Shop WebSite\ToolShopDomain\bin\Debug\net8.0\ToolShopDomainCore.dll
+C:\Users\FeZoX\Desktop\Tool Shop WebSite\ToolShopDomain\bin\Debug\net8.0\ToolShopDomainCore.pdb
+C:\Users\FeZoX\Desktop\Tool Shop WebSite\ToolShopDomain\obj\Debug\net8.0\ToolShopDomainCore.csproj.AssemblyReference.cache
+C:\Users\FeZoX\Desktop\Tool Shop WebSite\ToolShopDomain\obj\Debug\net8.0\ToolShopDomainCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\FeZoX\Desktop\Tool Shop WebSite\ToolShopDomain\obj\Debug\net8.0\ToolShopDomainCore.AssemblyInfoInputs.cache
+C:\Users\FeZoX\Desktop\Tool Shop WebSite\ToolShopDomain\obj\Debug\net8.0\ToolShopDomainCore.AssemblyInfo.cs
+C:\Users\FeZoX\Desktop\Tool Shop WebSite\ToolShopDomain\obj\Debug\net8.0\ToolShopDomainCore.csproj.CoreCompileInputs.cache
+C:\Users\FeZoX\Desktop\Tool Shop WebSite\ToolShopDomain\obj\Debug\net8.0\ToolShopDomainCore.dll
+C:\Users\FeZoX\Desktop\Tool Shop WebSite\ToolShopDomain\obj\Debug\net8.0\refint\ToolShopDomainCore.dll
+C:\Users\FeZoX\Desktop\Tool Shop WebSite\ToolShopDomain\obj\Debug\net8.0\ToolShopDomainCore.pdb
+C:\Users\FeZoX\Desktop\Tool Shop WebSite\ToolShopDomain\obj\Debug\net8.0\ref\ToolShopDomainCore.dll
