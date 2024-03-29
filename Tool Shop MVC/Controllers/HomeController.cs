@@ -9,16 +9,15 @@ namespace Tool_Shop_MVC.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly ToolShopDbContext _dbContext;
 
-        public HomeController(ILogger<HomeController> logger, ToolShopDbContext dbContext)
+        public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            _dbContext = dbContext;
         }
 
         public async Task<IActionResult> Index()
         {
+            //var model = await _dbContext.ToolProfileModels.ToListAsync();
             return View();
         }
 

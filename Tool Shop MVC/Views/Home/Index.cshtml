@@ -1,8 +1,17 @@
-﻿@{
+﻿@model IEnumerable<ToolShopDomainCore.Domain.Entity.ToolProfileModel>
+@{
     ViewData["Title"] = "Home Page";
 }
+@{
+    foreach(var item in Model)
+    {
+        <div>
+            <h1 style="padding-left:10%;">@item.Name</h1>
+            <hr style="color:black"/>
+            <p>@item.Description</p>
+            <h6>Cena: @item.Price euro</h6>
+        </div>
+    }
+   
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+}

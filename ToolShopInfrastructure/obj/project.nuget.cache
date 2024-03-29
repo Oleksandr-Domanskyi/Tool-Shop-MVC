@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "ZWiXt2XVMdbS7WARZ/sbk1oY80SMT8x6uNtLqEAcHFX2P8Gf6b1dsbbD6IqjQ2J8KOUpnSOarWm1ROGDgQbAoA==",
+  "dgSpecHash": "XhmJxLYeSb8Af2H2U2qfYXRnD1cIqymtTxWCZU4Z1U4Kcm5yGrq4QKaN75Tiq1o5jf68e8bi3zLyAEsxk37iPQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopInfrastructure\\ToolShopInfrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\FeZoX\\.nuget\\packages\\ardalis.specification\\8.0.0\\ardalis.specification.8.0.0.nupkg.sha512",
+    "C:\\Users\\FeZoX\\.nuget\\packages\\ardalis.specification.entityframeworkcore\\8.0.0\\ardalis.specification.entityframeworkcore.8.0.0.nupkg.sha512",
     "C:\\Users\\FeZoX\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\FeZoX\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\FeZoX\\.nuget\\packages\\fluentresults\\3.15.2\\fluentresults.3.15.2.nupkg.sha512",
     "C:\\Users\\FeZoX\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\FeZoX\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\FeZoX\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.5\\microsoft.data.sqlclient.5.1.5.nupkg.sha512",

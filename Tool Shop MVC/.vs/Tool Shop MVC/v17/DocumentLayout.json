@@ -3,7 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\Tool Shop MVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7BAB12B3-AC62-4621-8BEA-D078FF0B53EE}|..\\ToolShopDomain\\ToolShopDomainCore.csproj|c:\\users\\fezox\\desktop\\tool shop website\\toolshopdomain\\domain\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BAB12B3-AC62-4621-8BEA-D078FF0B53EE}|..\\ToolShopDomain\\ToolShopDomainCore.csproj|c:\\users\\fezox\\desktop\\tool shop website\\toolshopdomain\\contracts\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BAB12B3-AC62-4621-8BEA-D078FF0B53EE}|..\\ToolShopDomain\\ToolShopDomainCore.csproj|c:\\users\\fezox\\desktop\\tool shop website\\toolshopdomain\\toolshopdomaincore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCBCFA25-1AB2-4636-8FF9-EE4602AC06C7}|..\\ToolShopInfrastructure\\ToolShopInfrastructure.csproj|c:\\users\\fezox\\desktop\\tool shop website\\toolshopinfrastructure\\services\\idictionaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCBCFA25-1AB2-4636-8FF9-EE4602AC06C7}|..\\ToolShopInfrastructure\\ToolShopInfrastructure.csproj|c:\\users\\fezox\\desktop\\tool shop website\\toolshopinfrastructure\\services\\dictionaryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCBCFA25-1AB2-4636-8FF9-EE4602AC06C7}|..\\ToolShopInfrastructure\\ToolShopInfrastructure.csproj|c:\\users\\fezox\\desktop\\tool shop website\\toolshopinfrastructure\\extentions\\servicecollectionextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{261B9448-0E26-48F2-8FB0-7B4D71E963FF}|Tool Shop MVC.csproj|c:\\users\\fezox\\desktop\\tool shop website\\tool shop mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{261B9448-0E26-48F2-8FB0-7B4D71E963FF}|Tool Shop MVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCBCFA25-1AB2-4636-8FF9-EE4602AC06C7}|..\\ToolShopInfrastructure\\ToolShopInfrastructure.csproj|c:\\users\\fezox\\desktop\\tool shop website\\toolshopinfrastructure\\services\\entityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCBCFA25-1AB2-4636-8FF9-EE4602AC06C7}|..\\ToolShopInfrastructure\\ToolShopInfrastructure.csproj|c:\\users\\fezox\\desktop\\tool shop website\\toolshopinfrastructure\\toolshopinfrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCBCFA25-1AB2-4636-8FF9-EE4602AC06C7}|..\\ToolShopInfrastructure\\ToolShopInfrastructure.csproj|c:\\users\\fezox\\desktop\\tool shop website\\toolshopinfrastructure\\repositories\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCBCFA25-1AB2-4636-8FF9-EE4602AC06C7}|..\\ToolShopInfrastructure\\ToolShopInfrastructure.csproj|c:\\users\\fezox\\desktop\\tool shop website\\toolshopinfrastructure\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCBCFA25-1AB2-4636-8FF9-EE4602AC06C7}|..\\ToolShopInfrastructure\\ToolShopInfrastructure.csproj|c:\\users\\fezox\\desktop\\tool shop website\\toolshopinfrastructure\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCBCFA25-1AB2-4636-8FF9-EE4602AC06C7}|..\\ToolShopInfrastructure\\ToolShopInfrastructure.csproj|c:\\users\\fezox\\desktop\\tool shop website\\toolshopinfrastructure\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{261B9448-0E26-48F2-8FB0-7B4D71E963FF}|Tool Shop MVC.csproj|c:\\users\\fezox\\desktop\\tool shop website\\tool shop mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{261B9448-0E26-48F2-8FB0-7B4D71E963FF}|Tool Shop MVC.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BAB12B3-AC62-4621-8BEA-D078FF0B53EE}|..\\ToolShopDomain\\ToolShopDomainCore.csproj|c:\\users\\fezox\\desktop\\tool shop website\\toolshopdomain\\domain\\entity\\toolprofilemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{261B9448-0E26-48F2-8FB0-7B4D71E963FF}|Tool Shop MVC.csproj|c:\\users\\fezox\\desktop\\tool shop website\\tool shop mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,30 +54,11 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\FeZoX\\Desktop\\ToolShopInfrastructure\\Extentions\\ServiceCollectionExtentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{261B9448-0E26-48F2-8FB0-7B4D71E963FF}|Tool Shop MVC.csproj|c:\\users\\fezox\\desktop\\tool shop website\\tool shop mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{261B9448-0E26-48F2-8FB0-7B4D71E963FF}|Tool Shop MVC.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{261B9448-0E26-48F2-8FB0-7B4D71E963FF}|Tool Shop MVC.csproj|c:\\users\\fezox\\desktop\\tool shop website\\tool shop mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{261B9448-0E26-48F2-8FB0-7B4D71E963FF}|Tool Shop MVC.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\FeZoX\\Desktop\\ToolShopDomain\\Domain\\Entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\FeZoX\\Desktop\\ToolShopDomain\\Domain\\Enums\\Category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\FeZoX\\Desktop\\ToolShopInfrastructure\\ToolShopInfrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\FeZoX\\Desktop\\ToolShopInfrastructure\\DataBase\\ToolShopDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\FeZoX\\Desktop\\ToolShopDomain\\Domain\\Entity\\ImageModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\FeZoX\\Desktop\\ToolShopDomain\\Domain\\Entity\\ToolProfileModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\FeZoX\\Desktop\\ToolShopInfrastructure\\DataBase\\Configurations\\ToolProfileConfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -55,8 +77,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ToolShopDomainCore",
+              "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopDomain\\ToolShopDomainCore.csproj",
+              "RelativeDocumentMoniker": "..\\ToolShopDomain\\ToolShopDomainCore.csproj",
+              "ToolTip": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopDomain\\ToolShopDomainCore.csproj",
+              "RelativeToolTip": "..\\ToolShopDomain\\ToolShopDomainCore.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-29T19:30:18.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IService.cs",
+              "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopDomain\\Contracts\\IService.cs",
+              "RelativeDocumentMoniker": "..\\ToolShopDomain\\Contracts\\IService.cs",
+              "ToolTip": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopDomain\\Contracts\\IService.cs",
+              "RelativeToolTip": "..\\ToolShopDomain\\Contracts\\IService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T19:30:35.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IDictionaryService.cs",
+              "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopInfrastructure\\Services\\IDictionaryService.cs",
+              "RelativeDocumentMoniker": "..\\ToolShopInfrastructure\\Services\\IDictionaryService.cs",
+              "ToolTip": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopInfrastructure\\Services\\IDictionaryService.cs",
+              "RelativeToolTip": "..\\ToolShopInfrastructure\\Services\\IDictionaryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T19:24:06.745Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -99,93 +160,150 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Entity.cs",
-              "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopDomain\\Domain\\Entity.cs",
-              "RelativeDocumentMoniker": "..\\ToolShopDomain\\Domain\\Entity.cs",
-              "ToolTip": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopDomain\\Domain\\Entity.cs",
-              "RelativeToolTip": "..\\ToolShopDomain\\Domain\\Entity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "DictionaryService.cs",
+              "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopInfrastructure\\Services\\DictionaryService.cs",
+              "RelativeDocumentMoniker": "..\\ToolShopInfrastructure\\Services\\DictionaryService.cs",
+              "ToolTip": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopInfrastructure\\Services\\DictionaryService.cs",
+              "RelativeToolTip": "..\\ToolShopInfrastructure\\Services\\DictionaryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T19:21:33.83Z",
+              "WhenOpened": "2024-03-29T19:21:05.607Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
+              "Title": "EntityService.cs",
+              "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopInfrastructure\\Services\\EntityService.cs",
+              "RelativeDocumentMoniker": "..\\ToolShopInfrastructure\\Services\\EntityService.cs",
+              "ToolTip": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopInfrastructure\\Services\\EntityService.cs",
+              "RelativeToolTip": "..\\ToolShopInfrastructure\\Services\\EntityService.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAD4vxsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T18:41:37.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopInfrastructure\\Repositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "..\\ToolShopInfrastructure\\Repositories\\IRepository.cs",
+              "ToolTip": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopInfrastructure\\Repositories\\IRepository.cs",
+              "RelativeToolTip": "..\\ToolShopInfrastructure\\Repositories\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T18:33:11.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopInfrastructure\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "..\\ToolShopInfrastructure\\Repositories\\Repository.cs",
+              "ToolTip": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopInfrastructure\\Repositories\\Repository.cs",
+              "RelativeToolTip": "..\\ToolShopInfrastructure\\Repositories\\Repository.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBoAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T18:06:25.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ServiceCollectionExtentions.cs",
+              "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopInfrastructure\\Extentions\\ServiceCollectionExtentions.cs",
+              "RelativeDocumentMoniker": "..\\ToolShopInfrastructure\\Extentions\\ServiceCollectionExtentions.cs",
+              "ToolTip": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopInfrastructure\\Extentions\\ServiceCollectionExtentions.cs",
+              "RelativeToolTip": "..\\ToolShopInfrastructure\\Extentions\\ServiceCollectionExtentions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAwBkAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T18:01:10.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\Tool Shop MVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\Tool Shop MVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-29T16:58:52.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopInfrastructure\\Repositories\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "..\\ToolShopInfrastructure\\Repositories\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopInfrastructure\\Repositories\\IUnitOfWork.cs",
+              "RelativeToolTip": "..\\ToolShopInfrastructure\\Repositories\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T17:18:01.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ToolShopInfrastructure",
+              "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopInfrastructure\\ToolShopInfrastructure.csproj",
+              "RelativeDocumentMoniker": "..\\ToolShopInfrastructure\\ToolShopInfrastructure.csproj",
+              "ToolTip": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopInfrastructure\\ToolShopInfrastructure.csproj",
+              "RelativeToolTip": "..\\ToolShopInfrastructure\\ToolShopInfrastructure.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-29T17:16:35.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopInfrastructure\\Repositories\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "..\\ToolShopInfrastructure\\Repositories\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopInfrastructure\\Repositories\\UnitOfWork.cs",
+              "RelativeToolTip": "..\\ToolShopInfrastructure\\Repositories\\UnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T17:17:08.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\Tool Shop MVC\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\Tool Shop MVC\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwBQAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBQAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T19:02:25.294Z"
+              "WhenOpened": "2024-03-28T19:02:25.294Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Entity.cs",
-              "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\ToolShopDomain\\Domain\\Entity.cs",
-              "RelativeDocumentMoniker": "..\\..\\ToolShopDomain\\Domain\\Entity.cs",
-              "ToolTip": "C:\\Users\\FeZoX\\Desktop\\ToolShopDomain\\Domain\\Entity.cs",
-              "RelativeToolTip": "..\\..\\ToolShopDomain\\Domain\\Entity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T17:43:50.162Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\ToolShopDomain\\Domain\\Enums\\Category.cs",
-              "RelativeDocumentMoniker": "..\\..\\ToolShopDomain\\Domain\\Enums\\Category.cs",
-              "ToolTip": "C:\\Users\\FeZoX\\Desktop\\ToolShopDomain\\Domain\\Enums\\Category.cs",
-              "RelativeToolTip": "..\\..\\ToolShopDomain\\Domain\\Enums\\Category.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T17:55:28.962Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ToolShopInfrastructure.csproj",
-              "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\ToolShopInfrastructure\\ToolShopInfrastructure.csproj",
-              "RelativeDocumentMoniker": "..\\..\\ToolShopInfrastructure\\ToolShopInfrastructure.csproj",
-              "ToolTip": "C:\\Users\\FeZoX\\Desktop\\ToolShopInfrastructure\\ToolShopInfrastructure.csproj",
-              "RelativeToolTip": "..\\..\\ToolShopInfrastructure\\ToolShopInfrastructure.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-28T18:36:53.055Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ToolShopDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\ToolShopInfrastructure\\DataBase\\ToolShopDbContext.cs",
-              "RelativeDocumentMoniker": "..\\..\\ToolShopInfrastructure\\DataBase\\ToolShopDbContext.cs",
-              "ToolTip": "C:\\Users\\FeZoX\\Desktop\\ToolShopInfrastructure\\DataBase\\ToolShopDbContext.cs",
-              "RelativeToolTip": "..\\..\\ToolShopInfrastructure\\DataBase\\ToolShopDbContext.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBQAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T18:33:17.218Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\Tool Shop MVC\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\Tool Shop MVC\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-28T17:36:43.717Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 15,
               "Title": "ServiceCollectionExtentions.cs",
               "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\ToolShopInfrastructure\\Extentions\\ServiceCollectionExtentions.cs",
               "RelativeDocumentMoniker": "..\\..\\ToolShopInfrastructure\\Extentions\\ServiceCollectionExtentions.cs",
@@ -196,43 +314,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "ImageModel.cs",
               "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\ToolShopDomain\\Domain\\Entity\\ImageModel.cs",
               "RelativeDocumentMoniker": "..\\..\\ToolShopDomain\\Domain\\Entity\\ImageModel.cs",
               "ToolTip": "C:\\Users\\FeZoX\\Desktop\\ToolShopDomain\\Domain\\Entity\\ImageModel.cs",
               "RelativeToolTip": "..\\..\\ToolShopDomain\\Domain\\Entity\\ImageModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-28T17:50:27.311Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ToolProfileModel.cs",
-              "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\ToolShopDomain\\Domain\\Entity\\ToolProfileModel.cs",
-              "RelativeDocumentMoniker": "..\\..\\ToolShopDomain\\Domain\\Entity\\ToolProfileModel.cs",
-              "ToolTip": "C:\\Users\\FeZoX\\Desktop\\ToolShopDomain\\Domain\\Entity\\ToolProfileModel.cs",
-              "RelativeToolTip": "..\\..\\ToolShopDomain\\Domain\\Entity\\ToolProfileModel.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T17:40:29.662Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "ToolProfileConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\ToolShopInfrastructure\\DataBase\\Configurations\\ToolProfileConfiguration.cs",
               "RelativeDocumentMoniker": "..\\..\\ToolShopInfrastructure\\DataBase\\Configurations\\ToolProfileConfiguration.cs",
               "ToolTip": "C:\\Users\\FeZoX\\Desktop\\ToolShopInfrastructure\\DataBase\\Configurations\\ToolProfileConfiguration.cs",
               "RelativeToolTip": "..\\..\\ToolShopInfrastructure\\DataBase\\Configurations\\ToolProfileConfiguration.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwB0AAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-28T18:32:34.079Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 16,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\Tool Shop MVC\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -240,29 +344,28 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-28T18:34:21.442Z"
+              "WhenOpened": "2024-03-28T18:34:21.442Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "ToolShopApplication.csproj",
               "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\ToolShopApplication\\ToolShopApplication.csproj",
               "RelativeDocumentMoniker": "..\\..\\ToolShopApplication\\ToolShopApplication.csproj",
               "ToolTip": "C:\\Users\\FeZoX\\Desktop\\ToolShopApplication\\ToolShopApplication.csproj",
               "RelativeToolTip": "..\\..\\ToolShopApplication\\ToolShopApplication.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-03-28T18:05:23.959Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "IEntity.cs",
               "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\ToolShopDomain\\Domain\\IEntity.cs",
               "RelativeDocumentMoniker": "..\\..\\ToolShopDomain\\Domain\\IEntity.cs",
               "ToolTip": "C:\\Users\\FeZoX\\Desktop\\ToolShopDomain\\Domain\\IEntity.cs",
               "RelativeToolTip": "..\\..\\ToolShopDomain\\Domain\\IEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-28T17:45:42.335Z"
             }
@@ -285,6 +388,40 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "6d1f0403-bcca-4633-9574-9065ead5ca38",
+        "Display": 1,
+        "X": -377,
+        "Y": 146,
+        "Width": 1535,
+        "Height": 732,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ToolProfileModel.cs",
+              "DocumentMoniker": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopDomain\\Domain\\Entity\\ToolProfileModel.cs",
+              "RelativeDocumentMoniker": "..\\ToolShopDomain\\Domain\\Entity\\ToolProfileModel.cs",
+              "ToolTip": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopDomain\\Domain\\Entity\\ToolProfileModel.cs",
+              "RelativeToolTip": "..\\ToolShopDomain\\Domain\\Entity\\ToolProfileModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T17:02:46.417Z",
+              "EditorCaption": ""
             }
           ]
         }

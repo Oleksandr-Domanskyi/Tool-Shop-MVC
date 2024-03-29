@@ -146,3 +146,7 @@ C:\Users\FeZoX\Desktop\Tool Shop WebSite\Tool Shop MVC\obj\Debug\net8.0\refint\T
 C:\Users\FeZoX\Desktop\Tool Shop WebSite\Tool Shop MVC\obj\Debug\net8.0\Tool Shop MVC.pdb
 C:\Users\FeZoX\Desktop\Tool Shop WebSite\Tool Shop MVC\obj\Debug\net8.0\Tool Shop MVC.genruntimeconfig.cache
 C:\Users\FeZoX\Desktop\Tool Shop WebSite\Tool Shop MVC\obj\Debug\net8.0\ref\Tool Shop MVC.dll
+C:\Users\FeZoX\Desktop\Tool Shop WebSite\Tool Shop MVC\obj\Debug\net8.0\Tool Shop MVC.sourcelink.json
+C:\Users\FeZoX\Desktop\Tool Shop WebSite\Tool Shop MVC\bin\Debug\net8.0\Ardalis.Specification.dll
+C:\Users\FeZoX\Desktop\Tool Shop WebSite\Tool Shop MVC\bin\Debug\net8.0\Ardalis.Specification.EntityFrameworkCore.dll
+C:\Users\FeZoX\Desktop\Tool Shop WebSite\Tool Shop MVC\bin\Debug\net8.0\FluentResults.dll

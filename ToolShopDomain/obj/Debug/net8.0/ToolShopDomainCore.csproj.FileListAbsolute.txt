@@ -22,3 +22,4 @@ C:\Users\FeZoX\Desktop\Tool Shop WebSite\ToolShopDomain\obj\Debug\net8.0\ToolSho
 C:\Users\FeZoX\Desktop\Tool Shop WebSite\ToolShopDomain\obj\Debug\net8.0\refint\ToolShopDomainCore.dll
 C:\Users\FeZoX\Desktop\Tool Shop WebSite\ToolShopDomain\obj\Debug\net8.0\ToolShopDomainCore.pdb
 C:\Users\FeZoX\Desktop\Tool Shop WebSite\ToolShopDomain\obj\Debug\net8.0\ref\ToolShopDomainCore.dll
+C:\Users\FeZoX\Desktop\Tool Shop WebSite\ToolShopDomain\obj\Debug\net8.0\ToolShopDomainCore.sourcelink.json
