@@ -1,16 +1,22 @@
-﻿@model IEnumerable<ToolShopDomainCore.Domain.Entity.ToolProfile>
+﻿@model List<ToolShopDomainCore.Domain.Entity.ToolProfile>
 @{
     ViewData["Title"] = "Home Page";
 }
+
 @{
     foreach(var item in Model)
     {
         <div>
             <h1 style="padding-left:10%;">@item.Name</h1>
             <hr style="color:black"/>
-            <p>@item.Description</p>
             <h6>Cena: @item.Price euro</h6>
+            <p>Category: @item.Category</p>
+            <p>@item.Description</p>
+            
+            <hr style="color:black"/>
+            <a class="btn btn-primary" asp-action="AddTool" >Add Tool</a>
         </div>
+       
     }
    
 

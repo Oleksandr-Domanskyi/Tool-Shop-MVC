@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tool Shop MVC", "Tool Shop MVC.csproj", "{261B9448-0E26-48F2-8FB0-7B4D71E963FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tool Shop MVC", "Tool Shop MVC.csproj", "{261B9448-0E26-48F2-8FB0-7B4D71E963FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolShopDomainCore", "..\ToolShopDomain\ToolShopDomainCore.csproj", "{7BAB12B3-AC62-4621-8BEA-D078FF0B53EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolShopDomainCore", "..\ToolShopDomain\ToolShopDomainCore.csproj", "{7BAB12B3-AC62-4621-8BEA-D078FF0B53EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolShopInfrastructure", "..\ToolShopInfrastructure\ToolShopInfrastructure.csproj", "{BCBCFA25-1AB2-4636-8FF9-EE4602AC06C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolShopInfrastructure", "..\ToolShopInfrastructure\ToolShopInfrastructure.csproj", "{BCBCFA25-1AB2-4636-8FF9-EE4602AC06C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolShopApplication", "..\ToolShopApplication\ToolShopApplication.csproj", "{94D0B6F1-558D-41E1-9F08-118FF165B335}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolShopApplication", "..\ToolShopApplication\ToolShopApplication.csproj", "{94D0B6F1-558D-41E1-9F08-118FF165B335}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

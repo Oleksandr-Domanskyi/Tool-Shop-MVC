@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Ardalis.Specification;
 using Ardalis.Specification.EntityFrameworkCore;
@@ -26,12 +27,16 @@ namespace ToolShopInfrastructure.Repositories
 
         public override async Task<T> AddAsync(T entity, CancellationToken cancellationToken = new())
         {
-            await _dbContext.Set<T>().AddAsync(entity, cancellationToken);
+            await _dbContext.Set<T>().AddAsync(entity);
             return entity;
         }
+        public override async Task<T?> GetByIdAsync<TId>(TId id, CancellationToken cancellationToken = default)
+                => await _dbContext.Set<T>().FindAsync(new object[] { id }, cancellationToken: cancellationToken);
+        
         public override async Task<List<T>> ListAsync(CancellationToken cancellationToken = default)
-        {
-            return await _dbContext.Set<T>().ToListAsync(cancellationToken);
-        }
+                => await _dbContext.Set<T>().ToListAsync(cancellationToken);
+
+
+
     }
 }

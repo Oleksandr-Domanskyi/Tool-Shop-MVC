@@ -1,8 +1,10 @@
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using Tool_Shop_MVC.Models;
 using ToolShopApplication.DataBase;
+using ToolShopApplication.DataTransferObject;
 using ToolShopDomainCore.Domain.Entity;
 using ToolShopInfrastructure.Services;
 
@@ -23,6 +25,24 @@ namespace Tool_Shop_MVC.Controllers
         {
             var model = await _entityService.GetListAsync(); 
             return View(model.Value);
+        }
+        public IActionResult AddTool() 
+        { 
+            return View(); 
+        }
+        [HttpPost]
+        public async Task<IActionResult> AddModal([FromForm]ToolProfileRequest request)
+        {
+            if(request == null)
+            {
+                throw new ArgumentNullException(nameof(request));
+            }
+            var result = ToolProfileRequest.ToDomain(request);
+
+            await _entityService.AddEntityAsync(result);
+
+            return RedirectToAction("Index");
+
         }
 
         public IActionResult Privacy()

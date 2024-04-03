@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ToolShopApplication.DataBase;
 using ToolShopDomainCore.Domain;
 using ToolShopInfrastructure.Repositories;
 
@@ -11,7 +12,7 @@ namespace ToolShopInfrastructure.Services
 {
     public class DictionaryService<EntityType, EntityCreate, EntityUpdate> : EntityService<EntityType>, IDictionaryService<EntityType, EntityCreate, EntityUpdate> where EntityType : Entity<int>
     {
-        public DictionaryService(IUnitOfWork unitOfWork) : base(unitOfWork)
+        public DictionaryService(IUnitOfWork unitOfWork, ToolShopDbContext dbContext) : base(unitOfWork, dbContext)
         {
         }
     }

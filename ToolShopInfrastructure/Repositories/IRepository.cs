@@ -6,5 +6,6 @@ namespace ToolShopInfrastructure.Repositories
     {
         Task<List<T>> ListAsync(CancellationToken cancellationToken = default);
         Task<T> AddAsync(T entity, CancellationToken cancellationToken = new());
+        Task<T?> GetByIdAsync<TId>(TId id, CancellationToken cancellationToken = default);
     }
 }

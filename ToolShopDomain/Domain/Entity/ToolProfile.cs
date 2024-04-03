@@ -15,7 +15,7 @@ namespace ToolShopDomainCore.Domain.Entity
         public string? Description { get; set; }
         public ImageModel? image { get; set; }
 
-        public  Category Category { get; set; }
+        public string Category { get; set; } = default!;
     }
   
 }

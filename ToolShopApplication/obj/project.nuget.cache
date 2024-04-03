@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "zVGsxLpURZ8CCmfGAXNXFaeN7hhqJjqsn1al4HdyVNK/EMJiPgofCsAj/EE63K2ZxdNs2ckh2FLR6bALwnc0kA==",
+  "dgSpecHash": "P1RqgWjgXTL0NEMXf4Q254OcfAlZG0B9k6pYnPZYWAVEWlk8Eglne1m692MS9iFzvp5PXvBKGhAKZcQ/zcCYYA==",
   "success": true,
   "projectFilePath": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopApplication\\ToolShopApplication.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\FeZoX\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\FeZoX\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.3\\microsoft.entityframeworkcore.8.0.3.nupkg.sha512",
     "C:\\Users\\FeZoX\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.3\\microsoft.entityframeworkcore.abstractions.8.0.3.nupkg.sha512",
     "C:\\Users\\FeZoX\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.3\\microsoft.entityframeworkcore.analyzers.8.0.3.nupkg.sha512",
@@ -16,7 +17,8 @@
     "C:\\Users\\FeZoX\\.nuget\\packages\\microsoft.extensions.logging\\8.0.0\\microsoft.extensions.logging.8.0.0.nupkg.sha512",
     "C:\\Users\\FeZoX\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\FeZoX\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
-    "C:\\Users\\FeZoX\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+    "C:\\Users\\FeZoX\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\FeZoX\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
   ],
   "logs": []
 }
