@@ -15,30 +15,8 @@ namespace ToolShopApplication.DataTransferObject
         public IFormFile Image { get; set; } = default!;
         public Category Category { get; set; }
 
-        public static ToolProfile ToDomain(ToolProfileRequest request)
-        {
-            return new ToolProfile()
-            {
-                Name = request.Name,
-                Price = request.Price,
-                Description = request.Description,
-                Category = Convert.ToString(request.Category),
-                image = new ImageModel()
-                {
-                    ImageName = request.Image!.FileName,
-                    FileType = request.Image.ContentType,
-                    DataFile = GetBytes(request.Image)
-                }
-            };
-        }
+       
 
-        private static byte[] GetBytes(IFormFile file)
-        {
-            using (var memoryStream = new MemoryStream())
-            {
-                file.CopyTo(memoryStream);
-                return memoryStream.ToArray();
-            }
-        }
+      
     }
 }

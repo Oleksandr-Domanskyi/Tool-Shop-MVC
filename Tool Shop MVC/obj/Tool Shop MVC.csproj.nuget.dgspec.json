@@ -114,6 +114,9 @@
             "projectReferences": {
               "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopDomain\\ToolShopDomainCore.csproj": {
                 "projectPath": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopDomain\\ToolShopDomainCore.csproj"
+              },
+              "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopInfrastructure\\ToolShopInfrastructure.csproj": {
+                "projectPath": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopInfrastructure\\ToolShopInfrastructure.csproj"
               }
             }
           }
@@ -133,6 +136,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
               "version": "[5.0.17, )"

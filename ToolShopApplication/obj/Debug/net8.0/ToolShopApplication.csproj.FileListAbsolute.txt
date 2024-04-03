@@ -29,3 +29,5 @@ C:\Users\FeZoX\Desktop\Tool Shop WebSite\ToolShopApplication\obj\Debug\net8.0\To
 C:\Users\FeZoX\Desktop\Tool Shop WebSite\ToolShopApplication\obj\Debug\net8.0\refint\ToolShopApplication.dll
 C:\Users\FeZoX\Desktop\Tool Shop WebSite\ToolShopApplication\obj\Debug\net8.0\ToolShopApplication.pdb
 C:\Users\FeZoX\Desktop\Tool Shop WebSite\ToolShopApplication\obj\Debug\net8.0\ref\ToolShopApplication.dll
+C:\Users\FeZoX\Desktop\Tool Shop WebSite\ToolShopApplication\bin\Debug\net8.0\ToolShopInfrastructure.dll
+C:\Users\FeZoX\Desktop\Tool Shop WebSite\ToolShopApplication\bin\Debug\net8.0\ToolShopInfrastructure.pdb

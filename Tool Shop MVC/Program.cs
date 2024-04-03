@@ -1,3 +1,4 @@
+using ToolShopApplication.Extention;
 using ToolShopInfrastructure.Extentions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -5,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddApplication();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
