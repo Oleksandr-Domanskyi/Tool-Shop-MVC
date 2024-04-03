@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ToolShopApplication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59048eed8b506c8fb0096ede90e9823c3771bf42")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6698778d9ad34fa165e2445fcba7bc5a737cb02")]
 [assembly: System.Reflection.AssemblyProductAttribute("ToolShopApplication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ToolShopApplication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

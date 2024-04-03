@@ -9,9 +9,9 @@ using ToolShopDomainCore.Domain.Entity;
 
 namespace ToolShopApplication.DataBase.Extentions
 {
-    public class ToolProfileConfiguration : IEntityTypeConfiguration<ToolProfileModel>
+    public class ToolProfileConfiguration : IEntityTypeConfiguration<ToolProfile>
     {
-        public void Configure(EntityTypeBuilder<ToolProfileModel> builder)
+        public void Configure(EntityTypeBuilder<ToolProfile> builder)
         {
             builder.ToTable("ToolProfile");
 

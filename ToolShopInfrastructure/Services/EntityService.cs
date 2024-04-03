@@ -19,7 +19,7 @@ namespace ToolShopInfrastructure.Services
         }
 
 
-        public async Task<Result<List<EntityType>>> _GetListAsync()
+        public async Task<Result<List<EntityType>>> GetListAsync()
         {
             return await Result.Try(async Task<List<EntityType>> () =>
                 await _unitOfWork.Repository<EntityType>().ListAsync(),

@@ -8,7 +8,7 @@ using ToolShopDomainCore.Domain.Enums;
 
 namespace ToolShopDomainCore.Domain.Entity
 {
-    public class ToolProfileModel: Entity<int>
+    public class ToolProfile: Entity<int>
     {
         public string Name { get; set; } = default!;
         public decimal Price { get; set; } = default!;

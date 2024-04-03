@@ -1,4 +1,5 @@
 ﻿using Ardalis.Specification;
+using ToolShopDomainCore.Contracts;
 using ToolShopDomainCore.Domain;
 
 namespace ToolShopInfrastructure.Services

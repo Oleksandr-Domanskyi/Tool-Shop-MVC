@@ -14,7 +14,7 @@ namespace ToolShopApplication.DataBase
         public ToolShopDbContext(DbContextOptions<ToolShopDbContext> options):base(options)
         {
         }
-        public DbSet<ToolProfileModel> ToolProfileModels { get; set; }
+        public DbSet<ToolProfile> ToolProfileModels { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
