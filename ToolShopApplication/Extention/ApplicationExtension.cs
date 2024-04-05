@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using ToolShopApplication.CQRS.Command.CreateEntity;
 using ToolShopApplication.CQRS.Handlers;
 using ToolShopApplication.CQRS.Queries.GetAll;
+using ToolShopApplication.CQRS.Queries.GetEntity;
 using ToolShopApplication.DataTransferObject;
 using ToolShopApplication.Mapping;
 using ToolShopDomainCore.Domain.Entity;
@@ -23,8 +24,8 @@ namespace ToolShopApplication.Extention
             services.AddAutoMapper(typeof(ToolsMappingProfile));
             services.AddTransient<IRequestHandler<GetAllQuery<ToolProfile, ToolProfileDto>, IEnumerable<ToolProfileDto>>, GetAllHandler<ToolProfile, ToolProfileDto>>();
             services.AddTransient<IRequestHandler<CreateEntityCommand<ToolProfile, ToolProfileRequest>, Unit>, CreateEntityCommandHandler<ToolProfile,ToolProfileRequest>>();
+            services.AddTransient(typeof(IRequestHandler<GetEntityByIdQuery<ToolProfile, ToolProfileRequest>, ToolProfileRequest>), typeof(GetEntityByIdQueryHandler<ToolProfile, ToolProfileRequest>));
 
-            
         }
     }
 }

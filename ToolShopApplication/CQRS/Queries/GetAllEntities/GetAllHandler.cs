@@ -9,14 +9,14 @@ using ToolShopInfrastructure.Services;
 
 namespace ToolShopApplication.CQRS.Handlers
 {
-    public class GetAllHandler<TDomain,TDto> : IRequestHandler<GetAllQuery<TDomain,TDto>, IEnumerable<TDto>>
+    public class GetAllHandler<TDomain, TDto> : IRequestHandler<GetAllQuery<TDomain, TDto>, IEnumerable<TDto>>
         where TDto : class
         where TDomain : Entity<int>
     {
         private readonly IEntityService<TDomain> _service;
         private readonly IMapper _mapper;
 
-        public GetAllHandler(IEntityService<TDomain> service, IMapper mapper) 
+        public GetAllHandler(IEntityService<TDomain> service, IMapper mapper)
         {
             _service = service;
             _mapper = mapper;
@@ -26,8 +26,6 @@ namespace ToolShopApplication.CQRS.Handlers
         {
             var model = await _service.GetListAsync();
             return _mapper.Map<IEnumerable<TDto>>(model.Value);
-            
-            
         }
     }
 }

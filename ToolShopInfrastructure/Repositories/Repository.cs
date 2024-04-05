@@ -30,6 +30,12 @@ namespace ToolShopInfrastructure.Repositories
             await _dbContext.Set<T>().AddAsync(entity);
             return entity;
         }
+        public override async Task UpdateAsync(T entity, CancellationToken cancellationToken = default)
+        {
+            _dbContext.Set<T>().Update(entity);
+
+            await SaveChangesAsync(cancellationToken);
+        }
         public override async Task<T?> GetByIdAsync<TId>(TId id, CancellationToken cancellationToken = default)
                 => await _dbContext.Set<T>().FindAsync(new object[] { id }, cancellationToken: cancellationToken);
         

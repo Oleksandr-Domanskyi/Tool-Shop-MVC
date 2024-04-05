@@ -23,23 +23,17 @@ namespace ToolShopInfrastructure.Services
             this.dbContext = dbContext;
         }
 
+        public async Task<Result<EntityType>> UpdateAsync(EntityType entity)
+        {
+            await _unitOfWork.Repository<EntityType>().UpdateAsync(entity);
+            await _unitOfWork.SaveChangesAsync();
+            return Result.Ok();
+        }
         public async Task<Result<EntityType>> AddEntityAsync(EntityType entity)
         {
-            try
-            {
-
                 await _unitOfWork.Repository<EntityType>().AddAsync(entity);
                 await _unitOfWork.SaveChangesAsync();
                 return Result.Ok();
-            }
-            catch (Exception ex)
-            {
-                return Result.Fail<EntityType>(ex.Message);
-            }
-
-            /*return await Result.Try(async Task<EntityType> () =>
-                await _unitOfWork.Repository<EntityType>().AddAsync(entity),
-                ex => new Error(ex.Message));*/
         }
         public async Task<Result<EntityType>> GetByIdAsync(int id)
         {
