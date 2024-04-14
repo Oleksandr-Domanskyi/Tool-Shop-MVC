@@ -23,11 +23,7 @@ namespace ToolShopApplication.CQRS.Command.Delete
         public async Task<Unit> Handle(DeleteEntityCommand<TDomain> request, CancellationToken cancellationToken)
         {
             await _service.DeleteAsync(request._entity);
-            await _raportServices.AddRaportAsync(new OperationRaport()
-            {
-                Operation = "DELETE",
-                UserName = "Administrator"
-            });
+            await _raportServices.AddRaportAsync(request._raport);
             return Unit.Value;
         }
     }

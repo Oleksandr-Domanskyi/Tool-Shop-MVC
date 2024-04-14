@@ -39,9 +39,9 @@ namespace Tool_Shop_MVC.Controllers
             return View(); 
         }
         [HttpPost]
-        public async Task<IActionResult> AddModal([FromForm]ToolProfileRequest request)
+        public async Task<IActionResult> AddModal([FromForm]ToolProfileRequest request,[FromForm]OperationRaport raport)
         {
-            await _mediator.Send(new CreateEntityCommand<ToolProfile, ToolProfileRequest>(request));
+            await _mediator.Send(new CreateEntityCommand<ToolProfile, ToolProfileRequest>(request,raport));
 
             return RedirectToAction("Index");
 
@@ -53,16 +53,16 @@ namespace Tool_Shop_MVC.Controllers
             return View(model);
         }
         [HttpPost]
-        public async Task<IActionResult> Update([FromForm] ToolProfileRequest request)
+        public async Task<IActionResult> Update([FromForm] ToolProfileRequest request, [FromForm] OperationRaport raport)
         {
-            await _mediator.Send(new UpdateEntityCommand<ToolProfile, ToolProfileRequest>(request));
+            await _mediator.Send(new UpdateEntityCommand<ToolProfile, ToolProfileRequest>(request,raport));
 
             return RedirectToAction("Index");
 
         }
-        public async Task<IActionResult> Delete([FromForm]ToolProfile request)
+        public async Task<IActionResult> Delete([FromForm]ToolProfile request, [FromForm] OperationRaport raport)
         {
-            await _mediator.Send(new DeleteEntityCommand<ToolProfile>(request));
+            await _mediator.Send(new DeleteEntityCommand<ToolProfile>(request,raport));
             return RedirectToAction("Index");
         }
         public IActionResult Privacy()

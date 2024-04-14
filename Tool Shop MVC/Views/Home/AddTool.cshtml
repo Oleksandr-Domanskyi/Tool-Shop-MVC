@@ -1,9 +1,10 @@
 ﻿@using ToolShopDomainCore.Domain.Enums
 @model ToolShopApplication.DataTransferObject.ToolProfileRequest
-
 @{
     ViewData["Title"] = "AddTool";
 }
+
+
 
 <h1>AddTool</h1>
 
@@ -12,7 +13,6 @@
 
 
 <form method="POST" enctype="multipart/form-data">
-
     <div class="row mb-5">
         <label class="col-sm-5">Name of Tool</label>
         <div class="col-sm-5">
@@ -50,9 +50,9 @@
         </div>
     </div>
     <div class="form-group">
-        <input type="submit" value="Create" asp-action="AddModal" class="btn btn-primary" />
+        <input type="submit"  value="Create" asp-action="AddModal"  asp-for="@Model.Operation" class="btn btn-primary" />
     </div>
-
+        <input type="hidden" value="Administrator" asp-for="UserName" />
 </form>
 
             

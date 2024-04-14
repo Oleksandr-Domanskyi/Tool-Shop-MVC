@@ -7,7 +7,7 @@ using ToolShopDomainCore.Domain.Entity;
 
 namespace ToolShopApplication.DataTransferObject
 {
-    public class ToolProfileDto
+    public class ToolProfileDto:OperationRaport
     {
         public int Id { get; set; } = default!;
         public string Name { get; set; } = default!;

@@ -30,6 +30,7 @@ namespace ToolShopInfrastructure.Services
 
         private async Task AddRaport(OperationRaport raport)
         {
+            raport.Id = default;
             await _dbContext.OperationRaports.AddAsync(raport);
             await _dbContext.SaveChangesAsync();
         }

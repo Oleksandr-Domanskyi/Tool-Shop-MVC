@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Av79/zqvyJujt0VPRxNucvK7pl+z7zOnuZJH4p2CEs11tamHsi4KZQ2oBSlmmHjc3l36VIDIFGPObtASXmrcJg==",
+  "dgSpecHash": "tXBhyuRPhOHjQo0ZmYmnx594nVycTJhkiczQeL0qQgkuJ/9oSe2KTzR9Co6+IoF81+q0wuvRnKo9ETLA4B4Liw==",
   "success": true,
   "projectFilePath": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\ToolShopDomain\\ToolShopDomainCore.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\FeZoX\\.nuget\\packages\\fluentresults\\3.15.2\\fluentresults.3.15.2.nupkg.sha512",
     "C:\\Users\\FeZoX\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.3\\microsoft.entityframeworkcore.8.0.3.nupkg.sha512",
     "C:\\Users\\FeZoX\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.3\\microsoft.entityframeworkcore.abstractions.8.0.3.nupkg.sha512",
     "C:\\Users\\FeZoX\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.3\\microsoft.entityframeworkcore.analyzers.8.0.3.nupkg.sha512",
@@ -16,7 +17,8 @@
     "C:\\Users\\FeZoX\\.nuget\\packages\\microsoft.extensions.logging\\8.0.0\\microsoft.extensions.logging.8.0.0.nupkg.sha512",
     "C:\\Users\\FeZoX\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\FeZoX\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
-    "C:\\Users\\FeZoX\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+    "C:\\Users\\FeZoX\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\FeZoX\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ToolShopDomainCore.Domain;
+using ToolShopDomainCore.Domain.Entity;
 
 namespace ToolShopApplication.CQRS.Command.CreateEntity
 {
@@ -12,11 +13,13 @@ namespace ToolShopApplication.CQRS.Command.CreateEntity
         where TDomain : Entity<int>
         where TReq : class
     {
-        public TReq Request { get; set; }
+        public TReq _request { get; set; }
+        public OperationRaport _raport { get; set; }
 
-        public CreateEntityCommand(TReq request)
+        public CreateEntityCommand(TReq request,OperationRaport raport)
         {
-            Request = request;
+            _request = request;
+            _raport = raport;
         }
     }
 }

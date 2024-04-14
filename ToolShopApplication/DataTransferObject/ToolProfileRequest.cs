@@ -6,7 +6,7 @@ using ToolShopDomainCore.Domain.Enums;
 
 namespace ToolShopApplication.DataTransferObject
 {
-    public class ToolProfileRequest
+    public class ToolProfileRequest:OperationRaport
     {
         public int? Id { get; set; } = 0;
         public string Name { get; set; } = default!;

@@ -53,11 +53,12 @@
         </div>
     </div>
     <div class="form-group">
-        <button type="submit" class="btn btn-primary">Update</button>
+        <input type="submit" asp-action="Update" value="Update" asp-for="Operation" class="btn btn-primary"/>
     </div>
     <div class="form-group">
-        <button type="submit"asp-action="Delete"  class="btn btn-danger">Delete</button>
+        <input type="submit"asp-action="Delete" value="Delete" asp-for=Operation  class="btn btn-danger"/>
     </div>
+        <input type="hidden"  value="Administrator" asp-for=UserName class="btn btn-danger"/>
 
 </form>
 

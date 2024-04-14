@@ -28,11 +28,7 @@ namespace ToolShopApplication.CQRS.Command.CreateEntity
         public async Task<Unit> Handle(CreateEntityCommand<TDomain, TReq> request, CancellationToken cancellationToken)
         {
             await _service.AddEntityAsync(_mapper.Map<TDomain>(request));
-            await _raportServices.AddRaportAsync(new OperationRaport()
-            {
-                Operation = "CREATE",
-                UserName = "Administrator"
-            });
+            await _raportServices.AddRaportAsync(request._raport);
             return Unit.Value;
         }
     }

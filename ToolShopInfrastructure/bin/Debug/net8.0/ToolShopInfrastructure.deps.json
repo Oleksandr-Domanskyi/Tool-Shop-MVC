@@ -598,6 +598,7 @@
       },
       "ToolShopDomainCore/1.0.0": {
         "dependencies": {
+          "FluentResults": "3.15.2",
           "Microsoft.EntityFrameworkCore.Relational": "8.0.3"
         },
         "runtime": {

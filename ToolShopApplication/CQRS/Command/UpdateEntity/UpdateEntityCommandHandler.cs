@@ -28,11 +28,7 @@ namespace ToolShopApplication.CQRS.Command.UpdateEntity
             var model = _mapper.Map<TDomain>(request);
 
             await _service.UpdateAsync(model);
-            await _raportServices.AddRaportAsync(new OperationRaport()
-            {
-                Operation = "UPDATE",
-                UserName = "Administrator"
-            });
+            await _raportServices.AddRaportAsync(request._raport);
 
 
             return Unit.Value;

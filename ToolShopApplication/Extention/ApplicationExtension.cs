@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,7 @@ using ToolShopApplication.CQRS.Queries.GetEntity;
 using ToolShopApplication.DataTransferObject;
 using ToolShopApplication.Extention.MediatRConfiguration;
 using ToolShopApplication.Mapping;
+using ToolShopDomainCore.Contracts;
 using ToolShopDomainCore.Domain;
 using ToolShopDomainCore.Domain.Entity;
 using ToolShopInfrastructure.Services;
@@ -26,7 +28,8 @@ namespace ToolShopApplication.Extention
     {
         public static void AddApplication(this IServiceCollection services)
         {
-            services.AddTransient<IRaportOperationServices, RaportOperationServices>();
+            
+            ConfigureServices(services);
             MediatrServices(services);
             services.AddAutoMapper(typeof(ToolsMappingProfile));
         }
@@ -36,5 +39,22 @@ namespace ToolShopApplication.Extention
             services.AddMediatR(typeof(Mediator));
             MediatrHandler.MediatrRegisterHandler<ToolProfile, ToolProfileDto, ToolProfileRequest>(services);
         }
+        private static void ConfigureServices(IServiceCollection services)
+        {
+            var serviceTypes = AppDomain.CurrentDomain.GetAssemblies()
+                .SelectMany(s => s.GetTypes())
+                .Where(t => t.GetInterfaces().Contains(typeof(IService)) && !t.IsInterface && t.Namespace == "ToolShopInfrastructure.Services")
+                .ToList();
+            foreach (var type in serviceTypes)
+            { 
+                var interfaceType = type.GetInterfaces().FirstOrDefault(t => t.Name == $"I{type.Name}");
+                if (interfaceType != null)
+                { 
+                    services.AddTransient(interfaceType, type);
+                }
+            }
+        }
+
+
     }
 }

@@ -22,12 +22,12 @@ namespace ToolShopApplication.Mapping
             CreateMap<ToolProfile,ToolProfileDto>();
 
             CreateMap<CreateEntityCommand<ToolProfile,ToolProfileRequest>, ToolProfile>()
-                .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Request.Id))
-                .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Request.Name))
-                .ForMember(dest => dest.Price, opt => opt.MapFrom(src => src.Request.Price))
-                .ForMember(dest => dest.Description, opt => opt.MapFrom(src => src.Request.Description))
-                .ForMember(dest => dest.Category, opt => opt.MapFrom(src => src.Request.Category))
-                .ForMember(dest => dest.image, opt => opt.MapFrom(src => ImageHandler.ImageToByteParse(src.Request.Image)));
+                .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src._request.Id))
+                .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src._request.Name))
+                .ForMember(dest => dest.Price, opt => opt.MapFrom(src => src._request.Price))
+                .ForMember(dest => dest.Description, opt => opt.MapFrom(src => src._request.Description))
+                .ForMember(dest => dest.Category, opt => opt.MapFrom(src => src._request.Category))
+                .ForMember(dest => dest.image, opt => opt.MapFrom(src => ImageHandler.ImageToByteParse(src._request.Image)));
 
             CreateMap<UpdateEntityCommand<ToolProfile, ToolProfileRequest>, ToolProfile>()
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src._request.Id))
