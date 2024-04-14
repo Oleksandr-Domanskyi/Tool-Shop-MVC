@@ -18,6 +18,7 @@ using ToolShopApplication.Extention.MediatRConfiguration;
 using ToolShopApplication.Mapping;
 using ToolShopDomainCore.Domain;
 using ToolShopDomainCore.Domain.Entity;
+using ToolShopInfrastructure.Services;
 
 namespace ToolShopApplication.Extention
 {
@@ -25,6 +26,7 @@ namespace ToolShopApplication.Extention
     {
         public static void AddApplication(this IServiceCollection services)
         {
+            services.AddTransient<IRaportOperationServices, RaportOperationServices>();
             MediatrServices(services);
             services.AddAutoMapper(typeof(ToolsMappingProfile));
         }

@@ -15,6 +15,7 @@ namespace ToolShopApplication.DataBase
         {
         }
         public DbSet<ToolProfile> ToolProfileModels { get; set; }
+        public DbSet<OperationRaport>OperationRaports { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -26,7 +27,7 @@ namespace ToolShopApplication.DataBase
                 }
             }
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-            //modelBuilder.HasDbFunction(()=>CustomS)
+            
 
             base.OnModelCreating(modelBuilder);
         }
