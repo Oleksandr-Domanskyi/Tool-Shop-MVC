@@ -49,9 +49,11 @@ namespace ToolShopInfrastructure.Services
                 ex => new Error(ex.Message));
         }
 
-
-
-
-
+        public async Task<Result<EntityType>> DeleteAsync(EntityType entity)
+        {
+            return await Result.Try(async Task () =>
+                await _unitOfWork.Repository<EntityType>().DeleteAsync(entity),
+                ex => new Error(ex.Message));
+        }
     }
 }

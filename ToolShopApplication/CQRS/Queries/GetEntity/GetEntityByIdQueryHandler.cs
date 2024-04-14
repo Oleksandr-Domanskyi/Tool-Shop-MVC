@@ -10,9 +10,9 @@ using ToolShopInfrastructure.Services;
 
 namespace ToolShopApplication.CQRS.Queries.GetEntity
 {
-    public class GetEntityByIdQueryHandler<TDomain, TReq> : IRequestHandler<GetEntityByIdQuery<TDomain, TReq>,TReq>
+    public class GetEntityByIdQueryHandler<TDomain, TDto> : IRequestHandler<GetEntityByIdQuery<TDomain, TDto>, TDto>
         where TDomain : Entity<int>
-        where TReq : class
+        where TDto : class
     {
         private readonly IEntityService<TDomain> _service;
         private readonly IMapper _mapper;
@@ -22,10 +22,10 @@ namespace ToolShopApplication.CQRS.Queries.GetEntity
             _service = service;
             _mapper = mapper;
         }
-        public async Task<TReq> Handle(GetEntityByIdQuery<TDomain, TReq> request, CancellationToken cancellationToken)
+        public async Task<TDto> Handle(GetEntityByIdQuery<TDomain, TDto> request, CancellationToken cancellationToken)
         {
             var model = await _service.GetByIdAsync(request._id);
-            var mapped = _mapper.Map<TReq>(model.Value);
+            var mapped = _mapper.Map<TDto>(model.Value);
             return mapped;
         }
     }

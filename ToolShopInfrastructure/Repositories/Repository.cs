@@ -20,9 +20,9 @@ namespace ToolShopInfrastructure.Repositories
             _dbContext = dbContext;
         }
 
-        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new())
+        public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new())
         {
-            throw new NotImplementedException("SaveChangesAsync can be only used by UnitOfWork.");
+            return await _dbContext.SaveChangesAsync(cancellationToken); 
         }
 
         public override async Task<T> AddAsync(T entity, CancellationToken cancellationToken = new())
@@ -33,6 +33,11 @@ namespace ToolShopInfrastructure.Repositories
         public override async Task UpdateAsync(T entity, CancellationToken cancellationToken = default)
         {
             _dbContext.Set<T>().Update(entity);
+        }
+
+        public override async Task DeleteAsync(T entity, CancellationToken cancellationToken = default)
+        {
+            _dbContext.Set<T>().Remove(entity);
 
             await SaveChangesAsync(cancellationToken);
         }

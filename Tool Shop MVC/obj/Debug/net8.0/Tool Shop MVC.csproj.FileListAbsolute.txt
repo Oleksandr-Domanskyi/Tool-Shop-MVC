@@ -338,3 +338,4 @@ C:\Users\FeZoX\Desktop\Tool Shop WebSite\Tool Shop MVC\bin\Debug\net8.0\AutoMapp
 C:\Users\FeZoX\Desktop\Tool Shop WebSite\Tool Shop MVC\bin\Debug\net8.0\MediatR.dll
 C:\Users\FeZoX\Desktop\Tool Shop WebSite\Tool Shop MVC\bin\Debug\net8.0\MediatR.Contracts.dll
 C:\Users\FeZoX\Desktop\Tool Shop WebSite\Tool Shop MVC\bin\Debug\net8.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\FeZoX\Desktop\Tool Shop WebSite\Tool Shop MVC\bin\Debug\net8.0\Scrutor.dll

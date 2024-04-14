@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6MoT6Ut2XYEGXRggagiAMBn2HuAsGWBsmuFTCH/pvhigsiLvPeyjNFHqiIIfR3HgnRLLA0ZqtoyfwWe7X93Bzg==",
+  "dgSpecHash": "lO/YgAfilHEwpphR8iOZas/tI0MYtuZglMA6MM5Geq6Rxubf1EqT35MaJVNCGUJEjRGd/uMdkxAopJKPpEc4zg==",
   "success": true,
   "projectFilePath": "C:\\Users\\FeZoX\\Desktop\\Tool Shop WebSite\\Tool Shop MVC\\Tool Shop MVC.csproj",
   "expectedPackageFiles": [
@@ -131,6 +131,7 @@
     "C:\\Users\\FeZoX\\.nuget\\packages\\nuget.projectmodel\\6.9.1\\nuget.projectmodel.6.9.1.nupkg.sha512",
     "C:\\Users\\FeZoX\\.nuget\\packages\\nuget.protocol\\6.9.1\\nuget.protocol.6.9.1.nupkg.sha512",
     "C:\\Users\\FeZoX\\.nuget\\packages\\nuget.versioning\\6.9.1\\nuget.versioning.6.9.1.nupkg.sha512",
+    "C:\\Users\\FeZoX\\.nuget\\packages\\scrutor\\4.2.2\\scrutor.4.2.2.nupkg.sha512",
     "C:\\Users\\FeZoX\\.nuget\\packages\\system.codedom\\5.0.0\\system.codedom.5.0.0.nupkg.sha512",
     "C:\\Users\\FeZoX\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
     "C:\\Users\\FeZoX\\.nuget\\packages\\system.composition\\7.0.0\\system.composition.7.0.0.nupkg.sha512",

@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using Tool_Shop_MVC.Models;
 using ToolShopApplication.CQRS.Command.CreateEntity;
+using ToolShopApplication.CQRS.Command.Delete;
 using ToolShopApplication.CQRS.Command.UpdateEntity;
 using ToolShopApplication.CQRS.Queries.GetAll;
 using ToolShopApplication.CQRS.Queries.GetEntity;
@@ -48,7 +49,7 @@ namespace Tool_Shop_MVC.Controllers
         [Route("Home/{Id}/UpdateTool")]
         public async Task<IActionResult> UpdateTool(int id)
         {
-            var model = await _mediator.Send(new GetEntityByIdQuery<ToolProfile, ToolProfileRequest>(id));
+            var model = await _mediator.Send(new GetEntityByIdQuery<ToolProfile, ToolProfileDto>(id));
             return View(model);
         }
         [HttpPost]
@@ -58,6 +59,11 @@ namespace Tool_Shop_MVC.Controllers
 
             return RedirectToAction("Index");
 
+        }
+        public async Task<IActionResult> Delete([FromForm]ToolProfile request)
+        {
+            await _mediator.Send(new DeleteEntityCommand<ToolProfile>(request));
+            return RedirectToAction("Index");
         }
         public IActionResult Privacy()
         {

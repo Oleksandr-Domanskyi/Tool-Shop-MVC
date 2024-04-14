@@ -8,9 +8,9 @@ using ToolShopDomainCore.Domain;
 
 namespace ToolShopApplication.CQRS.Queries.GetEntity
 {
-    public class GetEntityByIdQuery<TDomain,TReq>:IRequest<TReq>
+    public class GetEntityByIdQuery<TDomain, TDto> :IRequest<TDto>
         where TDomain : Entity<int>
-        where TReq : class
+        where TDto : class
     {
         public int _id { get; set; }
 

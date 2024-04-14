@@ -22,7 +22,7 @@ namespace ToolShopApplication.CQRS.Command.UpdateEntity
 
         public async Task<Unit> Handle(UpdateEntityCommand<TDomain, TReq> request, CancellationToken cancellationToken)
         {
-            var model = _mapper.Map<TDomain>(request._request);
+            var model = _mapper.Map<TDomain>(request);
 
             await _service.UpdateAsync(model);
 

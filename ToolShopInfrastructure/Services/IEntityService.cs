@@ -9,5 +9,6 @@ namespace ToolShopInfrastructure.Services
         Task<Result<EntityType>> GetByIdAsync(int id);
         Task<Result<EntityType>> AddEntityAsync(EntityType entity);
         Task<Result<EntityType>> UpdateAsync(EntityType entity);
+        Task<Result<EntityType>> DeleteAsync(EntityType entity);
     }
 }
