@@ -17,9 +17,11 @@ using ToolShopApplication.CQRS.Queries.GetEntity;
 using ToolShopApplication.DataTransferObject;
 using ToolShopApplication.Extention.MediatRConfiguration;
 using ToolShopApplication.Mapping;
+using ToolShopApplication.Services.Filter;
 using ToolShopDomainCore.Contracts;
 using ToolShopDomainCore.Domain;
 using ToolShopDomainCore.Domain.Entity;
+using ToolShopDomainCore.Domain.Fileters;
 using ToolShopInfrastructure.Services;
 
 namespace ToolShopApplication.Extention
@@ -31,6 +33,7 @@ namespace ToolShopApplication.Extention
             
             ConfigureServices(services);
             MediatrServices(services);
+            
             services.AddAutoMapper(typeof(ToolsMappingProfile));
         }
        
@@ -53,6 +56,8 @@ namespace ToolShopApplication.Extention
                     services.AddTransient(interfaceType, type);
                 }
             }
+            services.AddTransient(typeof(IFilterService<>), typeof(FilterService<>));
+            services.AddTransient(typeof(Filters));
         }
 
 

@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using ToolShopDomainCore.Domain;
+using ToolShopDomainCore.Domain.Fileters;
 
 namespace ToolShopApplication.CQRS.Queries.GetAll
 {

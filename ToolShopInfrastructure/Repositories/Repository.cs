@@ -8,6 +8,7 @@ using Ardalis.Specification;
 using Ardalis.Specification.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using ToolShopDomainCore.Domain;
+using ToolShopDomainCore.Domain.Fileters;
 
 namespace ToolShopInfrastructure.Repositories
 {
