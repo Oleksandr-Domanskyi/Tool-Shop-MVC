@@ -57,7 +57,7 @@ namespace ToolShopApplication.Extention
                 }
             }
             services.AddTransient(typeof(IFilterService<>), typeof(FilterService<>));
-            services.AddTransient(typeof(Filters));
+            services.AddTransient(typeof(Filters<>));
         }
 
 

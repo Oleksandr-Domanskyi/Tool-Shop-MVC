@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Globalization;
 using ToolShopApplication.Services.Filter;
 using ToolShopDomainCore.Domain.Entity;
 using ToolShopDomainCore.Domain.Fileters;
@@ -10,7 +11,7 @@ namespace Tool_Shop_MVC.Controllers
     {
         private readonly IEntityService<OperationRaport> _service;
         private readonly IFilterService<OperationRaport> _filterService;
-        public Filters Filters { get; set; }
+        public Filters<OperationRaport> Filters { get; set; }
 
         public AdministratorController(IEntityService<OperationRaport> service,IFilterService<OperationRaport> filterService)
         {
@@ -18,10 +19,15 @@ namespace Tool_Shop_MVC.Controllers
             _filterService = filterService;
         }
         [Route("/Administrator")]
-        public async Task<IActionResult> Index(Filters filters)
+        public async Task<IActionResult> Index(Filters<OperationRaport> model)
         {       
-            var model = await _service.GetListAsync();
-            var filtered = await _filterService.AddFilters(model.Value,filters);
+            model.entity = await _service.GetListAsync();
+          
+            ViewBag.SortBy = model.SortBy;
+            ViewBag.SortDirection = model.SortDirection;
+            
+            var filtered = await _filterService.AddFilters(model);
+            
             return View(filtered);
         }
     }

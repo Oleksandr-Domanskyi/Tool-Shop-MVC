@@ -1,47 +1,70 @@
-﻿@model IEnumerable<ToolShopDomainCore.Domain.Entity.OperationRaport>
+﻿
+@model IEnumerable<ToolShopDomainCore.Domain.Entity.OperationRaport>
 
 @{
     ViewData["Title"] = "Index";
+    string idIcon = ViewBag.SortBy == "Id" && ViewBag.SortDirection == "ascending" ? "▲" : "▼";
+    string operationIcon = ViewBag.SortBy == "Operation" && ViewBag.SortDirection == "ascending" ? "▲" : "▼";
+    string userNameIcon = ViewBag.SortBy == "UserName" && ViewBag.SortDirection == "ascending" ? "▲" : "▼";
+    string dateIcon = ViewBag.SortBy == "DateOfRealising" && ViewBag.SortDirection == "ascending" ? "▲" : "▼";
 }
 
-<h1>Operation History</h1>
+<div d style="display:flex; justify-content:space-between;">
+    <h1>Operation History</h1>
+</div>
 
-
-<table class="table"style="text-align:center;">
+<table class="table" style="text-align:center;">
     <thead>
         <tr>
             <th>
-                <a  style="padding-right:3px; font-size:10px; color:black;text-decoration:none" asp-action="Index" asp-route-SortBy="Id">&#9660</a> @Html.DisplayNameFor(model => model.Id)
+                <a onclick="changeIcon(this, 'Id')" style="text-decoration:none; color:black" asp-action="Index" asp-route-SortBy="Id" asp-route-SortDirection="@(ViewBag.SortBy == "Id" && ViewBag.SortDirection == "ascending" ? "descending" : "ascending")">@idIcon</a> @Html.DisplayNameFor(model => model.Id)
             </th>
             <th>
-                <a style="padding-right:3px; font-size:10px; color:black;text-decoration:none" asp-action="Index" asp-route-SortBy="Operation">&#9660</a>@Html.DisplayNameFor(model => model.Operation)
+                <a onclick="changeIcon(this, 'Operation')" style="text-decoration:none; color:black" asp-action="Index" asp-route-SortBy="Operation" asp-route-SortDirection="@(ViewBag.SortBy == "Operation" && ViewBag.SortDirection == "ascending" ? "descending" : "ascending")">@operationIcon</a> @Html.DisplayNameFor(model => model.Operation)
             </th>
             <th>
-                <a style="padding-right:3px; font-size:10px; color:black;text-decoration:none" asp-action="Index" asp-route-SortBy="UserName">&#9660</a>@Html.DisplayNameFor(model => model.UserName)
+                <a onclick="changeIcon(this, 'UserName')" style="text-decoration:none; color:black" asp-action="Index" asp-route-SortBy="UserName" asp-route-SortDirection="@(ViewBag.SortBy == "UserName" && ViewBag.SortDirection == "ascending" ? "descending" : "ascending")">@userNameIcon</a> @Html.DisplayNameFor(model => model.UserName)
             </th>
             <th>
-                <a style="padding-right:3px; font-size:10px; color:black;text-decoration:none" asp-action="Index" asp-route-SortBy="DateOfRealising">&#9660</a>@Html.DisplayNameFor(model => model.DateOfRealising)
+                <a onclick="changeIcon(this, 'DateOfRealising')" style="text-decoration:none; color:black" asp-action="Index" asp-route-SortBy="DateOfRealising" asp-route-SortDirection="@(ViewBag.SortBy == "DateOfRealising" && ViewBag.SortDirection == "ascending" ? "descending" : "ascending")">@dateIcon</a> @Html.DisplayNameFor(model => model.DateOfRealising)
             </th>
-            
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Operation)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UserName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateOfRealising)
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Id)</td>
+                <td>@Html.DisplayFor(modelItem => item.Operation)</td>
+                <td>@Html.DisplayFor(modelItem => item.UserName)</td>
+                <td>@Html.DisplayFor(modelItem => item.DateOfRealising)</td>
+            </tr>
+        }
     </tbody>
 </table>
+
+<script>
+    let changeIcon = function (link, sortBy) {
+        let iconElement = link.firstChild;
+        let currentDirection = link.getAttribute('data-sort-direction');
+
+        if (currentDirection === 'ascending') {
+            iconElement.textContent = '▼';
+            link.setAttribute('data-sort-direction', 'descending');
+        } else {
+            iconElement.textContent = '▲';
+            link.setAttribute('data-sort-direction', 'ascending');
+        }
+
+        // Обновление других иконок
+        let otherLinks = document.querySelectorAll('a');
+        otherLinks.forEach(function (otherLink) {
+            if (otherLink !== link && otherLink.getAttribute('data-sort-by') === sortBy) {
+                let otherIconElement = otherLink.firstChild;
+                otherIconElement.textContent = '▼';
+                otherLink.setAttribute('data-sort-direction', 'ascending');
+            }
+        });
+    }
+</script>

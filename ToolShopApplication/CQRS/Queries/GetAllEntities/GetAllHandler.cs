@@ -16,13 +16,12 @@ namespace ToolShopApplication.CQRS.Handlers
     {
         private readonly IEntityService<TDomain> _service;
         private readonly IMapper _mapper;
-        private readonly Filters _filter;
 
-        public GetAllHandler(IEntityService<TDomain> service, IMapper mapper,Filters filter)
+
+        public GetAllHandler(IEntityService<TDomain> service, IMapper mapper)
         {
             _service = service;
             _mapper = mapper;
-            _filter = filter;
         }
 
         public async Task<IEnumerable<TDto>> Handle(GetAllQuery<TDomain, TDto> request, CancellationToken cancellationToken)
