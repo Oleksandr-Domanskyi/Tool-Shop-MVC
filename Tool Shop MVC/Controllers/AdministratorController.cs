@@ -11,8 +11,6 @@ namespace Tool_Shop_MVC.Controllers
     {
         private readonly IEntityService<OperationRaport> _service;
         private readonly IFilterService<OperationRaport> _filterService;
-        public Filters<OperationRaport> Filters { get; set; }
-
         public AdministratorController(IEntityService<OperationRaport> service,IFilterService<OperationRaport> filterService)
         {
             _service = service;
@@ -27,7 +25,7 @@ namespace Tool_Shop_MVC.Controllers
             ViewBag.SortDirection = model.SortDirection;
             
             var filtered = await _filterService.AddFilters(model);
-            
+
             return View(filtered);
         }
     }

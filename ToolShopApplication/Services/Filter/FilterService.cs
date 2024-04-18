@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FluentResults;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -13,12 +14,12 @@ namespace ToolShopApplication.Services.Filter
     {
         
 
-        public Task<IEnumerable<TDomain>> AddFilters(Filters<TDomain> domain)
+        public Task<Filters<TDomain>> AddFilters(Filters<TDomain> domain)
         {
             if (domain.SortBy == null || domain.SortDirection == null)
             {
-                var domains = domain.entity!.Value.Reverse<TDomain>().ToList();
-                return Task.FromResult<IEnumerable<TDomain>>(domains);
+                domain.entity = Result.Try(() => domain.entity!.Value.Reverse<TDomain>().ToList());
+                return Task.FromResult(Pager(domain));
             }
 
             PropertyInfo? property = typeof(TDomain).GetProperty(domain.SortBy);
@@ -28,17 +29,45 @@ namespace ToolShopApplication.Services.Filter
                 throw new ArgumentException($"Property {domain.SortBy} not found in type {typeof(TDomain).Name}");
             }
 
-            IEnumerable<TDomain> sortedDomain;
+            //IEnumerable<TDomain> sortedDomain;
 
             if (domain.SortDirection == "ascending")
             {
-                sortedDomain = domain.entity!.Value.OrderBy(x => property.GetValue(x));
+                domain.entity = Result.Try(()=>domain.entity!.Value.OrderBy(x => property.GetValue(x)).ToList());
             }
             else
             {
-                sortedDomain = domain.entity!.Value.OrderByDescending(x => property.GetValue(x));
+                domain.entity = Result.Try(() => domain.entity!.Value.OrderByDescending(x => property.GetValue(x)).ToList());
             }
-            return Task.FromResult(sortedDomain);
+            
+            return Task.FromResult(Pager(domain));
+        }
+
+        private Filters<TDomain> Pager(Filters<TDomain> domain)
+        {
+            int reSkip = (domain.CurrentPage - 1) * domain.perPage;
+
+            domain.GetTotalPages(domain.entity, domain.perPage);
+
+            domain.StartPage = domain.CurrentPage - 5;
+            domain.LastPage = domain.CurrentPage + 4;
+
+            if (domain.StartPage <= 0)
+            {
+                domain.LastPage = domain.LastPage - (domain.StartPage - 1);
+                domain.StartPage = 1;
+            }
+            if (domain.LastPage > domain.TotalPages)
+            {
+                domain.LastPage = domain.TotalPages;
+                if(domain.LastPage > 10)
+                {
+                    domain.StartPage = domain.LastPage - 9;
+                }
+            }
+            domain.entity = Result.Try(() => domain.entity!.Value.Skip(reSkip).Take(domain.perPage).ToList()); 
+            
+            return domain;
         }
     }
 }

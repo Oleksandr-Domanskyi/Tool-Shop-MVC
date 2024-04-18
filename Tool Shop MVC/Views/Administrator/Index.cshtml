@@ -1,5 +1,6 @@
-﻿
-@model IEnumerable<ToolShopDomainCore.Domain.Entity.OperationRaport>
+﻿@using ToolShopDomainCore.Domain.Fileters
+
+@model Filters<ToolShopDomainCore.Domain.Entity.OperationRaport>
 
 @{
     ViewData["Title"] = "Index";
@@ -7,32 +8,56 @@
     string operationIcon = ViewBag.SortBy == "Operation" && ViewBag.SortDirection == "ascending" ? "▲" : "▼";
     string userNameIcon = ViewBag.SortBy == "UserName" && ViewBag.SortDirection == "ascending" ? "▲" : "▼";
     string dateIcon = ViewBag.SortBy == "DateOfRealising" && ViewBag.SortDirection == "ascending" ? "▲" : "▼";
+
+ 
+
 }
 
-<div d style="display:flex; justify-content:space-between;">
+<div style="display:flex; justify-content:space-between;">
     <h1>Operation History</h1>
+    <div class="col-sm-5" style="display:flex;">
+        <form asp-controller="Administrator" asp-action="Index" method="get">
+            <select name="perPage" class="form-control" onchange="this.form.submit()">
+            @for (int i = 0; i < Enum.GetValues(typeof(Perpage)).Length; i++)
+            {
+                <option value="@i">@i</option>
+            }
+        </select>
+        </form>
+    </div>
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const selectElement = document.getElementById('perPageSelect');
+
+        selectElement.addEventListener('change', function () {
+            const selectedValue = this.value;
+            const url = `/Administrator?perPage=${selectedValue}`;
+            window.location.href = url;
+        });
+    });
+</script>
 
 <table class="table" style="text-align:center;">
     <thead>
         <tr>
             <th>
-                <a onclick="changeIcon(this, 'Id')" style="text-decoration:none; color:black" asp-action="Index" asp-route-SortBy="Id" asp-route-SortDirection="@(ViewBag.SortBy == "Id" && ViewBag.SortDirection == "ascending" ? "descending" : "ascending")">@idIcon</a> @Html.DisplayNameFor(model => model.Id)
+                <a onclick="changeIcon(this, 'Id')" style="text-decoration:none; color:black" asp-action="Index" asp-route-SortBy="Id" asp-route-SortDirection="@(ViewBag.SortBy == "Id" && ViewBag.SortDirection == "ascending" ? "descending" : "ascending")">@idIcon</a> @Html.DisplayNameFor(model => model.entity!.Value.First().Id)
             </th>
             <th>
-                <a onclick="changeIcon(this, 'Operation')" style="text-decoration:none; color:black" asp-action="Index" asp-route-SortBy="Operation" asp-route-SortDirection="@(ViewBag.SortBy == "Operation" && ViewBag.SortDirection == "ascending" ? "descending" : "ascending")">@operationIcon</a> @Html.DisplayNameFor(model => model.Operation)
+                <a onclick="changeIcon(this, 'Operation')" style="text-decoration:none; color:black" asp-action="Index" asp-route-SortBy="Operation" asp-route-SortDirection="@(ViewBag.SortBy == "Operation" && ViewBag.SortDirection == "ascending" ? "descending" : "ascending")">@operationIcon</a> @Html.DisplayNameFor(model => model.entity!.Value.First().Operation)
             </th>
             <th>
-                <a onclick="changeIcon(this, 'UserName')" style="text-decoration:none; color:black" asp-action="Index" asp-route-SortBy="UserName" asp-route-SortDirection="@(ViewBag.SortBy == "UserName" && ViewBag.SortDirection == "ascending" ? "descending" : "ascending")">@userNameIcon</a> @Html.DisplayNameFor(model => model.UserName)
+                <a onclick="changeIcon(this, 'UserName')" style="text-decoration:none; color:black" asp-action="Index" asp-route-SortBy="UserName" asp-route-SortDirection="@(ViewBag.SortBy == "UserName" && ViewBag.SortDirection == "ascending" ? "descending" : "ascending")">@userNameIcon</a> @Html.DisplayNameFor(model => model.entity!.Value.First().UserName)
             </th>
             <th>
-                <a onclick="changeIcon(this, 'DateOfRealising')" style="text-decoration:none; color:black" asp-action="Index" asp-route-SortBy="DateOfRealising" asp-route-SortDirection="@(ViewBag.SortBy == "DateOfRealising" && ViewBag.SortDirection == "ascending" ? "descending" : "ascending")">@dateIcon</a> @Html.DisplayNameFor(model => model.DateOfRealising)
+                <a onclick="changeIcon(this, 'DateOfRealising')" style="text-decoration:none; color:black" asp-action="Index" asp-route-SortBy="DateOfRealising" asp-route-SortDirection="@(ViewBag.SortBy == "DateOfRealising" && ViewBag.SortDirection == "ascending" ? "descending" : "ascending")">@dateIcon</a> @Html.DisplayNameFor(model => model.entity!.Value.First().DateOfRealising)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
+        @foreach (var item in Model.entity!.Value)
         {
             <tr>
                 <td>@Html.DisplayFor(modelItem => item.Id)</td>
@@ -43,6 +68,36 @@
         }
     </tbody>
 </table>
+
+<div class="container">
+    @if (Model != null && Model.TotalPages > 0)
+    {
+        <ul class="pagination justify-content-center">
+            @if (Model.CurrentPage > 1)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-action="index" asp-route-CurrentPage="1">First</a>
+                </li>
+                <li>
+                    <a class="page-link" asp-action="Index" asp-route-CurrentPage="@Model.CurrentPage">Previous</a>
+                </li>
+            }
+            @for (var pge = Model.StartPage; pge <= Model.LastPage; pge++)
+            {
+                <li class="page-item @(pge == Model.CurrentPage ? "active":"")">
+                    <a class="page-link" asp-action="Index" asp-route-CurrentPage="@pge">@pge</a>
+                </li>
+               
+            }
+            @if (Model.CurrentPage < Model.LastPage)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-action="index" asp-route-CurrentPage="@Model.LastPage">Last</a>
+                </li>
+            }
+        </ul>
+    }
+</div>
 
 <script>
     let changeIcon = function (link, sortBy) {
