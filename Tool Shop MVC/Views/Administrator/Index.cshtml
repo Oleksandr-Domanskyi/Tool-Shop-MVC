@@ -3,55 +3,49 @@
 @model Filters<ToolShopDomainCore.Domain.Entity.OperationRaport>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Administrator";
     string idIcon = ViewBag.SortBy == "Id" && ViewBag.SortDirection == "ascending" ? "▲" : "▼";
     string operationIcon = ViewBag.SortBy == "Operation" && ViewBag.SortDirection == "ascending" ? "▲" : "▼";
     string userNameIcon = ViewBag.SortBy == "UserName" && ViewBag.SortDirection == "ascending" ? "▲" : "▼";
     string dateIcon = ViewBag.SortBy == "DateOfRealising" && ViewBag.SortDirection == "ascending" ? "▲" : "▼";
-
- 
-
 }
 
 <div style="display:flex; justify-content:space-between;">
     <h1>Operation History</h1>
-    <div class="col-sm-5" style="display:flex;">
+    <div class="col-sm-5" style="display:flex; padding-left:15%;">
+        <h6>Amount elements: </h6>
         <form asp-controller="Administrator" asp-action="Index" method="get">
-            <select name="perPage" class="form-control" onchange="this.form.submit()">
-            @for (int i = 0; i < Enum.GetValues(typeof(Perpage)).Length; i++)
-            {
-                <option value="@i">@i</option>
-            }
-        </select>
+            <select id="perPage" name="perPage" class="form-control" onchange="this.form.submit()">
+                @foreach (Perpage value in Enum.GetValues(typeof(Perpage)))
+                {
+                    if (Model.perPage == (int)value)
+                    {
+                        <option style="text-align:center;" value="@Convert.ToInt32(value)" selected>@Convert.ToInt32(value)</option>
+                    }
+                    else
+                    {
+                        <option style="text-align:center;" value="@Convert.ToInt32(value)">@Convert.ToInt32(value)</option>
+                    }
+                }
+            </select>
         </form>
     </div>
 </div>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const selectElement = document.getElementById('perPageSelect');
-
-        selectElement.addEventListener('change', function () {
-            const selectedValue = this.value;
-            const url = `/Administrator?perPage=${selectedValue}`;
-            window.location.href = url;
-        });
-    });
-</script>
 
 <table class="table" style="text-align:center;">
     <thead>
         <tr>
             <th>
-                <a onclick="changeIcon(this, 'Id')" style="text-decoration:none; color:black" asp-action="Index" asp-route-SortBy="Id" asp-route-SortDirection="@(ViewBag.SortBy == "Id" && ViewBag.SortDirection == "ascending" ? "descending" : "ascending")">@idIcon</a> @Html.DisplayNameFor(model => model.entity!.Value.First().Id)
+                <a style="color:black;text-decoration:none" href="@Url.Action("Index", new { CurrentPage = Model.CurrentPage, perPage = Model.perPage, SortBy = "Id", SortDirection = ViewBag.SortBy == "Id" && ViewBag.SortDirection == "ascending" ? "descending" : "ascending" })">@idIcon</a> @Html.DisplayNameFor(model => model.entity!.Value.First().Id)
             </th>
             <th>
-                <a onclick="changeIcon(this, 'Operation')" style="text-decoration:none; color:black" asp-action="Index" asp-route-SortBy="Operation" asp-route-SortDirection="@(ViewBag.SortBy == "Operation" && ViewBag.SortDirection == "ascending" ? "descending" : "ascending")">@operationIcon</a> @Html.DisplayNameFor(model => model.entity!.Value.First().Operation)
+                <a style="color:black;text-decoration:none" href="@Url.Action("Index", new { CurrentPage = Model.CurrentPage, perPage = Model.perPage, SortBy = "Operation", SortDirection = ViewBag.SortBy == "Operation" && ViewBag.SortDirection == "ascending" ? "descending" : "ascending" })">@operationIcon</a> @Html.DisplayNameFor(model => model.entity!.Value.First().Operation)
             </th>
             <th>
-                <a onclick="changeIcon(this, 'UserName')" style="text-decoration:none; color:black" asp-action="Index" asp-route-SortBy="UserName" asp-route-SortDirection="@(ViewBag.SortBy == "UserName" && ViewBag.SortDirection == "ascending" ? "descending" : "ascending")">@userNameIcon</a> @Html.DisplayNameFor(model => model.entity!.Value.First().UserName)
+                <a style="color:black;text-decoration:none" href="@Url.Action("Index", new { CurrentPage = Model.CurrentPage, perPage = Model.perPage, SortBy = "UserName", SortDirection = ViewBag.SortBy == "UserName" && ViewBag.SortDirection == "ascending" ? "descending" : "ascending" })">@userNameIcon</a> @Html.DisplayNameFor(model => model.entity!.Value.First().UserName)
             </th>
             <th>
-                <a onclick="changeIcon(this, 'DateOfRealising')" style="text-decoration:none; color:black" asp-action="Index" asp-route-SortBy="DateOfRealising" asp-route-SortDirection="@(ViewBag.SortBy == "DateOfRealising" && ViewBag.SortDirection == "ascending" ? "descending" : "ascending")">@dateIcon</a> @Html.DisplayNameFor(model => model.entity!.Value.First().DateOfRealising)
+                <a style="color:black;text-decoration:none" href="@Url.Action("Index", new { CurrentPage = Model.CurrentPage, perPage = Model.perPage, SortBy = "DateOfRealising", SortDirection = ViewBag.SortBy == "DateOfRealising" && ViewBag.SortDirection == "ascending" ? "descending" : "ascending" })">@dateIcon</a> @Html.DisplayNameFor(model => model.entity!.Value.First().DateOfRealising)
             </th>
             <th></th>
         </tr>
@@ -76,50 +70,27 @@
             @if (Model.CurrentPage > 1)
             {
                 <li class="page-item">
-                    <a class="page-link" asp-action="index" asp-route-CurrentPage="1">First</a>
+                    <a class="page-link" style="color:black;text-decoration:none" href="@Url.Action("Index", new { CurrentPage = 1, perPage = Model.perPage, SortBy = ViewBag.SortBy, SortDirection = ViewBag.SortDirection })">First</a>
                 </li>
                 <li>
-                    <a class="page-link" asp-action="Index" asp-route-CurrentPage="@Model.CurrentPage">Previous</a>
+                    <a class="page-link" style="color:black;text-decoration:none" href="@Url.Action("Index", new { CurrentPage = Model.CurrentPage - 1, perPage = Model.perPage, SortBy = ViewBag.SortBy, SortDirection = ViewBag.SortDirection })">Previous</a>
                 </li>
             }
             @for (var pge = Model.StartPage; pge <= Model.LastPage; pge++)
             {
                 <li class="page-item @(pge == Model.CurrentPage ? "active":"")">
-                    <a class="page-link" asp-action="Index" asp-route-CurrentPage="@pge">@pge</a>
+                    <a class="page-link" style="color:black;text-decoration:none" href="@Url.Action("Index", new { CurrentPage = pge, perPage = Model.perPage, SortBy = ViewBag.SortBy, SortDirection = ViewBag.SortDirection })">@pge</a>
                 </li>
-               
             }
             @if (Model.CurrentPage < Model.LastPage)
             {
                 <li class="page-item">
-                    <a class="page-link" asp-action="index" asp-route-CurrentPage="@Model.LastPage">Last</a>
+                    <a class="page-link" style="color:black;text-decoration:none" href="@Url.Action("Index", new { CurrentPage = Model.CurrentPage + 1, perPage = Model.perPage, SortBy = ViewBag.SortBy, SortDirection = ViewBag.SortDirection })">Next</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" style="color:black;text-decoration:none" href="@Url.Action("Index", new { CurrentPage = Model.LastPage, perPage = Model.perPage, SortBy = ViewBag.SortBy, SortDirection = ViewBag.SortDirection })">Last</a>
                 </li>
             }
         </ul>
     }
 </div>
-
-<script>
-    let changeIcon = function (link, sortBy) {
-        let iconElement = link.firstChild;
-        let currentDirection = link.getAttribute('data-sort-direction');
-
-        if (currentDirection === 'ascending') {
-            iconElement.textContent = '▼';
-            link.setAttribute('data-sort-direction', 'descending');
-        } else {
-            iconElement.textContent = '▲';
-            link.setAttribute('data-sort-direction', 'ascending');
-        }
-
-        // Обновление других иконок
-        let otherLinks = document.querySelectorAll('a');
-        otherLinks.forEach(function (otherLink) {
-            if (otherLink !== link && otherLink.getAttribute('data-sort-by') === sortBy) {
-                let otherIconElement = otherLink.firstChild;
-                otherIconElement.textContent = '▼';
-                otherLink.setAttribute('data-sort-direction', 'ascending');
-            }
-        });
-    }
-</script>
